@@ -1,0 +1,509 @@
+.setting {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    color: white;
+    font-family: 'Trirong', serif;
+    scroll-behavior: smooth;
+}
+
+.tittleNav {
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 4.8rem;
+}
+
+.boxSetting {
+    width: 1203px;
+    height: 100%;
+    margin: 72px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxSetting nav {
+    width: 21%;
+    position: fixed;
+}
+
+.form {
+    width: 79%;
+    margin-left: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list {
+    list-style: none;
+    margin-top: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.list li font {
+    font-size: 1.4rem;
+    margin: 0 16px;
+}
+
+.list li i {
+    font-size: 1.8rem;
+    color: rgba(168, 160, 160, 0.71);
+}
+
+.list li:hover i {
+    color: #d13639;
+}
+
+.active {
+    color: #d13639 !important;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.head {
+    padding: 40px;
+    width: 40%;
+    background-color: #1f1e1e;
+    box-sizing: border-box;
+}
+
+.tail {
+    padding: 40px;
+    width: 60%;
+    background-color: #292727;
+    box-sizing: border-box;
+}
+
+.titleCard {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.description {
+    margin-top: 16px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+
+.boxEmail, .boxUsername, .boxCurrentPass, .boxNewPass, .boxConfirmNewPass {
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.boxCountry {
+    width: 40%;
+    position: relative;
+}
+
+.boxEmail input, .boxCountry input, .boxDate input, .boxMonth input, .boxYear input, .boxUsername input, .boxCurrentPass input, .boxNewPass input, .boxConfirmNewPass input {
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    font-family: 'Trirong', serif;
+    border-radius: 4px;
+    padding-top: 16px;
+    text-indent: 8px;
+    font-weight: 600;
+    color: #f9f9f9;
+    font-size: 1.4rem;
+    border: transparent;
+}
+
+.boxEmail input, .boxCountry input, .boxCurrentPass input, .boxNewPass input, .boxConfirmNewPass input {
+    background-color: #3b3a3a;
+}
+
+.boxUsername input, .boxCountry input, .boxBirthday {
+    border-radius: 4px;
+    border: 2px solid #4c4c4c;
+    background-color: transparent;
+}
+
+.disable {
+    background-color: transparent !important;
+}
+
+.boxDate input, .boxMonth input, .boxYear input {
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.boxEmail input:hover, .boxCurrentPass input:hover, .boxNewPass input:hover, .boxConfirmNewPass input:hover {
+    background-color: #3f3f3f;
+}
+
+.boxEmail label, .boxCountry label, .boxDate label, .boxMonth label, .boxYear label, .boxUsername label {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+    color: white;
+    font-weight: 600;
+}
+
+.boxUsername label, .boxCountry label, .boxBirthday label {
+    color: grey;
+}
+
+.boxCurrentPass label, .boxNewPass label, .boxConfirmNewPass label {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+    color: white;
+    font-weight: 600;
+}
+
+.boxEmail input:focus, .boxCountry input:focus, .boxDate input:focus, .boxMonth input:focus, .boxYear input:focus, .boxUsername:focus, .boxCurrentPass:focus, .boxNewPass:focus, .boxConfirmNewPass:focus {
+    padding-top: 16px;
+}
+
+
+.boxInput {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.boxBirthday {
+    width: 56%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.boxDate, .boxMonth, .boxYear {
+    position: relative;
+    width: 32%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.boxDate::after, .boxMonth::after {
+    content: "";
+    border-left: 1px solid #4c4c4c;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    height: 48%;
+}
+
+.btn1 {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 24px;
+}
+
+.btn1 button {
+    width: 184px;
+    font-size: 1.2rem;
+    font-family: 'Trirong', serif;
+    text-transform: uppercase;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: none;
+}
+
+.btnCancel {
+    margin: 0 16px;
+    background-color: rgba(138, 138, 138, 0.1);
+    color: #f9f9f9;
+}
+
+.yes {
+    background-color: #d13639;
+    color: white;
+}
+
+.no {
+    border: 2px solid rgba(128, 126, 126, 0.83) !important;
+    background-color: transparent;
+    color: rgba(246, 244, 244, 0.35);
+}
+
+.btnCancel:hover {
+    background-color: rgba(250, 250, 250, 0.1) !important;
+}
+
+.boxInput1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleBoxInput1 {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+
+.protectAccount {
+    width: 100%;
+    height: 64px;
+    padding: 16px;
+    border-radius: 2px;
+    background-color: #3b3a3a;
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.iconEmail {
+    width: 40px;
+    height: 40px;
+    background-color: #f9f9f9;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconEmail i {
+    color: #3b3a3a;
+    font-size: 1.6rem;
+}
+
+.statusProtect {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.statusProtect font {
+    font-size: 1.6rem;
+}
+
+.statusProtect font:nth-child(2) {
+    color: rgba(166, 161, 161, 0.9);
+}
+
+.btnProtect button, .btnLogOutEvr button {
+    font-family: 'Trirong', serif;
+    border-radius: 4px;
+    padding: 6px;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #e5e5e5;
+}
+
+.btnProtect button {
+    min-width: 120px;
+}
+
+.btnProtect button:hover, .btnLogOutEvr button:hover {
+    background-color: #ffffff;
+}
+
+.btnLogOutEvr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLogOutEvr button {
+    width: 100%;
+}
+
+.notification {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.notification input[type='checkbox'] {
+    width: 32px;
+    height: 32px;
+    accent-color: #3b3a3a;
+    cursor: pointer;
+}
+
+.boxTitleNtf {
+    padding: 4px;
+}
+
+.boxTitleNtf label {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.boxTitleNtf div {
+    font-size: 1.3rem;
+}
+
+.communicationPreferences {
+
+}
+
+.support {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+.support font {
+    width: 102px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.support font:hover {
+    background-color: #4c4c4c;
+}
+
+.boxLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+
+.boxLogo svg {
+    color: #4c4c4c;
+}
+
+.boxLogo:hover .nameWeb {
+    color: #f9f9f9;
+}
+
+.logo {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nameWeb {
+    font-size: 1.6rem;
+    margin: 0 4px;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(140, 140, 140, 0.9);
+}
+
+.review {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #888585;
+    margin-bottom: 32px;
+}
+
+.review font {
+    width: 90%;
+    overflow-wrap: anywhere;
+}
+
+.boxDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.div1, .div2 {
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.div1:hover, .div2:hover {
+    background-color: #524f4f;
+    border-radius: 4px;
+}
+
+.condition {
+    width: 100%;
+    margin: 8px 0 16px 0;
+    list-style: none;
+    padding-left: 40px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.condition li {
+    display: flex;
+    align-items: center;
+}
+
+.condition li i {
+    color: #4c4c4c;
+    font-size: 2rem;
+}
+
+.condition li font {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.lockPass, .unlockPass, .lockCurrentPass, .unlockCurrentPass, .lockConfirmPass, .unlockConfirmPass {
+    display: none;
+}
+
+.boxNewPass i, .boxConfirmNewPass i, .boxCurrentPass i {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    font-size: 2rem;
+    z-index: 2;
+}

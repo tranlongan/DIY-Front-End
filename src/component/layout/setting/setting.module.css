@@ -1,0 +1,458 @@
+.container {
+    width: 100%;
+    min-height: 1234px;
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.background {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0OCIgaGVpZ2h0PSIyMTcyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiMwQTBBMEEiIGQ9Ik0wIDBoMTQ0OHYyMTcySDB6Ii8+CiAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1vcGFjaXR5PSIuOCIgZD0iTTAgMGgxNDQ4djIxNzJIMHoiLz4KICA8cGF0aCBmaWxsPSIjMEEwQTBBIiBkPSJNMCAyMTcyaDE0NDh2LTcyNEgweiIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDE0NDggMCkiIGZpbGw9InVybCgjYikiIGQ9Ik0wIDBoMTQ0OHYxNDQ4SDB6Ii8+CiAgPG1hc2sgaWQ9ImMiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSIxNDQ4IiBoZWlnaHQ9IjIxNzIiPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNDQ4IDBIMHYyMTcyVjBoMTQ0OFptMCAxMzEuNTk4TDEyNS45MjEgNzQ3Ljk1OCA0MzkuMzI5IDIxNzJIMTQ0OFYxMzEuNTk4WiIgZmlsbD0iIzAwMCIvPgogIDwvbWFzaz4KICA8ZyBtYXNrPSJ1cmwoI2MpIj4KICAgIDxwYXRoIGZpbGw9IiMwQTBBMEEiIGQ9Ik0xNDQ4IDBIMHYyMTcyaDE0NDh6Ii8+CiAgICA8cGF0aCBmaWxsPSJ1cmwoI2QpIiBmaWxsLW9wYWNpdHk9Ii44IiBkPSJNMCAwaDE0NDh2MjE3MkgweiIvPgogICAgPHBhdGggZmlsbD0idXJsKCNlKSIgZD0iTTAgMGgxNDQ4djIxNzJIMHoiLz4KICAgIDxwYXRoIGZpbGw9InVybCgjZikiIGQ9Ik0wIDBoMTQ0OHYyMTcySDB6Ii8+CiAgPC9nPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMTQ0OCIgeTE9IjEwODYiIHgyPSItMTI2LjA4NyIgeTI9Ijg1My40NDYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzFGMUYxRiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxRjFGMUYiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjcyNCIgeTE9IjE0NDgiIHgyPSI3MjQiIHkyPSIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwQTBBMEEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEEwQTBBIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImQiIHgxPSIwIiB5MT0iMTA4NiIgeDI9IjEzNDMuMiIgeTI9Ijk2OC45OTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMjUiIHN0b3AtY29sb3I9IiMxRjFGMUYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMUYxRjFGIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImUiIHgxPSIxNDQ4IiB5MT0iMTA4NiIgeDI9IjcyNCIgeTI9IjEwODYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzBBMEEwQSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii43NSIgc3RvcC1jb2xvcj0iIzBBMEEwQSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJmIiB4MT0iNzI0IiB5MT0iMjE3MiIgeDI9IjcyNCIgeTI9IjAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzBBMEEwQSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwQTBBMEEiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+Cjwvc3ZnPgo=");
+    background-size: cover;
+    filter: brightness(0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.setting {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    color: white;
+    font-family: 'Trirong', serif;
+    scroll-behavior: smooth;
+}
+
+.tittleNav {
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 4.8rem;
+}
+
+.boxSetting {
+    width: 1203px;
+    height: 100%;
+    margin: 72px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxSetting nav {
+    width: 21%;
+    position: fixed;
+}
+
+.form {
+    width: 79%;
+    margin-left: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list {
+    list-style: none;
+    margin-top: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.list li font {
+    font-size: 1.4rem;
+    margin: 0 16px;
+}
+
+.list li i {
+    font-size: 1.8rem;
+    color: rgba(168, 160, 160, 0.71);
+}
+
+.list li:hover i {
+    color: #d13639;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.head {
+    padding: 40px;
+    width: 40%;
+    background-color: #1f1e1e;
+    box-sizing: border-box;
+}
+
+.tail {
+    padding: 40px;
+    width: 60%;
+    background-color: #292727;
+    box-sizing: border-box;
+}
+
+.titleCard {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.description {
+    margin-top: 16px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+
+.boxEmail, .boxUsername, .boxCurrentPass, .boxNewPass, .boxConfirmNewPass {
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.boxCountry {
+    width: 40%;
+    position: relative;
+}
+
+.boxEmail input, .boxCountry input, .boxDate input, .boxMonth input, .boxYear input, .boxUsername input, .boxCurrentPass input, .boxNewPass input, .boxConfirmNewPass input {
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    font-family: 'Trirong', serif;
+    border-radius: 4px;
+    padding-top: 16px;
+    text-indent: 8px;
+    font-weight: 600;
+    color: #f9f9f9;
+    font-size: 1.4rem;
+    border: transparent;
+}
+
+.boxEmail input, .boxCountry input, .boxUsername input, .boxCurrentPass input, .boxNewPass input, .boxConfirmNewPass input {
+    background-color: #3b3a3a;
+}
+
+.boxDate input, .boxMonth input, .boxYear input {
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+
+.boxEmail input:hover, .boxCountry input:hover, .boxUsername input:hover, .boxCurrentPass input:hover, .boxNewPass input:hover, .boxConfirmNewPass input:hover {
+    background-color: #3f3f3f;
+}
+
+.boxEmail label, .boxCountry label, .boxDate label, .boxMonth label, .boxYear label, .boxUsername label {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+    color: white;
+    font-weight: 600;
+}
+
+.boxCurrentPass label, .boxNewPass label, .boxConfirmNewPass label {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+    color: white;
+    font-weight: 600;
+}
+
+.boxEmail input:focus, .boxCountry input:focus, .boxDate input:focus, .boxMonth input:focus, .boxYear input:focus, .boxUsername:focus, .boxCurrentPass:focus, .boxNewPass:focus, .boxConfirmNewPass:focus {
+    padding-top: 16px;
+}
+
+.boxCurrentPass input:focus ~ .labelCurrentPass, .boxNewPass input:focus ~ .labelNewPass, .boxConfirmNewPass input:focus ~ .labelConfirmNewPass {
+    top: 0;
+    left: 8px;
+}
+
+.boxInput {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.boxBirthday {
+    width: 56%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b3a3a;
+    box-sizing: border-box;
+}
+
+.boxDate, .boxMonth, .boxYear {
+    position: relative;
+    width: 32%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.boxDate::after, .boxMonth::after {
+    content: "";
+    border-left: 1px solid #4c4c4c;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    height: 48%;
+}
+
+.btn1 {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 24px;
+}
+
+.btn1 button {
+    width: 184px;
+    font-size: 1.2rem;
+    font-family: 'Trirong', serif;
+    text-transform: uppercase;
+    padding: 4px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    border-radius: 2px;
+}
+
+.boxInput1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleBoxInput1 {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+
+.protectAccount {
+    width: 100%;
+    height: 64px;
+    padding: 16px;
+    border-radius: 2px;
+    background-color: #3b3a3a;
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.iconEmail {
+    width: 40px;
+    height: 40px;
+    background-color: #f9f9f9;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconEmail i {
+    color: #3b3a3a;
+    font-size: 1.6rem;
+}
+
+.statusProtect {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.statusProtect font {
+    font-size: 1.6rem;
+}
+
+.statusProtect font:nth-child(2) {
+    color: rgba(166, 161, 161, 0.9);
+}
+
+.btnProtect button, .btnLogOutEvr button {
+    font-family: 'Trirong', serif;
+    border-radius: 4px;
+    padding: 6px;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #e5e5e5;
+}
+
+.btnProtect button {
+    min-width: 120px;
+}
+
+.btnProtect button:hover, .btnLogOutEvr button:hover {
+    background-color: #ffffff;
+}
+
+.btnLogOutEvr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLogOutEvr button {
+    width: 100%;
+}
+
+.notification {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.notification input[type='checkbox'] {
+    width: 32px;
+    height: 32px;
+    accent-color: #3b3a3a;
+    cursor: pointer;
+}
+
+.boxTitleNtf {
+    padding: 4px;
+}
+
+.boxTitleNtf label {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.boxTitleNtf div {
+    font-size: 1.3rem;
+}
+
+.communicationPreferences {
+
+}
+
+.support {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+.support font {
+    width: 102px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.support font:hover {
+    background-color: #4c4c4c;
+}
+
+.boxLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+
+.boxLogo svg{
+    color: #4c4c4c;
+}
+
+.boxLogo:hover .nameWeb{
+    color: #f9f9f9;
+}
+
+.logo {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nameWeb {
+    font-size: 1.6rem;
+    margin: 0 4px;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(140, 140, 140, 0.9);
+}
+
+.review {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #888585;
+    margin-bottom: 32px;
+}
+
+.review font{
+    width: 90%;
+    overflow-wrap: anywhere;
+}
+
+.boxDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.div1, .div2 {
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.div1:hover, .div2:hover{
+    background-color: #524f4f;
+    border-radius: 4px;
+}
+

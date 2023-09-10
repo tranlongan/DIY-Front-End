@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*62.5% == 1 rem == 12px*/
+    font-size: 62.5%;
+}
+
+.grip {
+    display: block;
+    width: 100%;
+}
+
+.wide {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+input{
+    padding: 0;
+}
+
+/*tổng thể của toàn bộ Scroll*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/*màu nền của scrollBar*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /*border-radius: 4px;*/
+    /*background: #262525;*/
+}
+
+/*phần thanh cuộn*/
+::-webkit-scrollbar-thumb {
+    background: #7c7979;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}

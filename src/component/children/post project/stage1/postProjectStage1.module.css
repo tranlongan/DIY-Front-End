@@ -1,0 +1,181 @@
+.postProject {
+    width: 1220px;
+    margin: 72px auto 0 auto;
+    color: #e8b057;
+    font-family: 'Trirong', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: 100%;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.title i {
+    margin: 0 8px;
+}
+
+.title span{
+    text-transform: none;
+}
+
+.form {
+    width: inherit;
+    min-height: 320px;
+    max-height: fit-content;
+    background-color: #4c4c4c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    box-sizing: border-box;
+}
+
+.nameProject, .titlePhoto {
+    height: 56px;
+    margin: 8px 0;
+}
+
+.nameProject{
+    width: 64%;
+    position: relative;
+}
+
+.nameProject input:focus{
+    padding-top: 24px;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.nameProject label{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    transition: 0.2s;
+}
+
+.titlePhoto {
+    position: relative;
+}
+
+.nameProject input, .titlePhoto input {
+    width: 100%;
+    height: 100%;
+    font-family: 'Trirong', serif;
+    border-radius: 4px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding-top: 16px;
+}
+
+.nameProject input {
+    border: 1px solid #3b3a3a;
+    text-indent: 8px;
+}
+
+.titlePhoto label {
+    display: inline-block;
+    width: fit-content;
+    min-height: 48px;
+    max-height: fit-content;
+    padding: 0 16px;
+    text-align: right;
+    font-size: 1.4rem;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+}
+
+.titlePhoto input {
+    position: absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.titlePhoto input + label {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlePhoto input + label {
+    text-align: center;
+    /*left: 7.35em;*/
+    /*top: 0.5em;*/
+    /* Decorative */
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.titlePhoto input[type=file] + label:hover {
+    background: #3399ff;
+}
+
+.boxTitlePhoto {
+    width: 54%;
+    height: fit-content;
+}
+
+.boxTitlePhoto img {
+    left: 0;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.editor {
+    width: 64%;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.prdUsedInPost {
+    display: flex;
+    justify-content: right;
+    width: 64%;
+    margin-bottom: 4px;
+}
+
+.product {
+    width: 88%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 64%;
+}
+
+.btn button {
+    width: 124px;
+    height: 56px;
+    border-radius: 4px;
+    font-family: 'Trirong', serif;
+    font-size: 1.6rem;
+    color: #e8b057;
+    background-color: transparent;
+    border: 1px solid #e8b057;
+}
+

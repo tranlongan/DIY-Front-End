@@ -1,0 +1,501 @@
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Trirong', serif;
+}
+
+.navigationBar {
+    width: 100%;
+    height: 65px;
+    margin-top: 116px;
+    background-color: #171817;
+    box-shadow: 0 -24px 26px 24px #0a0a0c;
+    box-sizing: border-box;
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+}
+
+.navList1 {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #e8b057;
+    display: flex;
+    align-items: center;
+}
+
+.navList2 {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #e8b057;
+    border-right: 1px solid #e8b057;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    color: #e8b057;
+    padding: 0 24px;
+}
+
+.link i {
+    margin: 0 8px;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.nameMember {
+    font-size: 1.6rem;
+}
+
+.background {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.backgroundTitle {
+    background-color: #262525;
+    filter: brightness(0.6);
+    width: 100%;
+    height: calc(100% + 44px);
+    position: absolute;
+    z-index: -1;
+    transform: translateY(56px);
+    box-shadow: 0 -40px 100px #4c4c4c;
+}
+
+.memberTitle {
+    width: 100%;
+    color: #937341;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: translateY(-100px);
+    filter: brightness(112%);
+}
+
+.top {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.bottom {
+    width: 100%;
+    bottom: 32px;
+}
+
+.bottom img {
+    transform: translateY(-24px);
+    width: 100%;
+    object-fit: contain;
+}
+
+.descriptionTitle {
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 1220px;
+    margin: 160px auto 56px auto;
+}
+
+.banner {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 72px 72px 72px 72px 72px 72px 72px;
+    margin-bottom: 104px;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #111318;
+    border: 1px solid #31271e;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 8;
+    color: #c4b998;
+    flex-direction: column;
+    justify-content: unset;
+}
+
+.introTitle {
+    width: 100%;
+    height: 72px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #31271e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introTitle font {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.introduceYourselfInDetail {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemInf {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.itemInf i {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemInf font {
+    overflow-wrap: anywhere;
+}
+
+.item:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    flex-direction: column;
+}
+
+.avatar {
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    top: -56px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("https://universe.leagueoflegends.com/images/ChampionIconFrame.png");
+    background-size: cover;
+    z-index: 1;
+}
+
+.avatar img {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 3px solid #e8b057;
+}
+
+.introduceYourself {
+    width: 90%;
+    color: #c4b998;
+    font-size: 1.6rem;
+    overflow-wrap: anywhere;
+}
+
+.introduceYourself:before {
+    content: "'' ";
+}
+
+.introduceYourself:after {
+    content: " ''";
+}
+
+.signature {
+    color: #c4b998;
+    font-size: 2rem;
+}
+
+.item:nth-child(3) {
+}
+
+.follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    color: #c4b998;
+    border-right: 1px solid #31271e;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.follow i {
+    font-size: 3.2rem;
+}
+
+.followers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 75%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(196, 185, 152, 0.61);
+}
+
+.followers::after {
+    transform: translateX(8px);
+    content: "Followers";
+}
+
+.item:nth-child(4) {
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+.item:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    position: relative;
+    flex-direction: column;
+}
+
+.backgroundStore {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-size: cover;
+    filter: brightness(0.5) saturate(50%);
+}
+
+.infStore {
+    width: 90%;
+    padding: 16px 0;
+    text-align: center;
+    color: #c4b998;
+    z-index: 1;
+    font-size: 2.4rem;
+    box-sizing: border-box;
+    line-height: 3.2rem;
+}
+
+.viewStore {
+    z-index: 1;
+}
+
+.viewStore button {
+    width: 240px;
+    height: 80px;
+    border: 1px solid #e8b057;
+    background: rgba(30, 24, 24, 0.6);
+    color: #c4b998;
+    box-sizing: border-box;
+    font-family: 'Trirong', serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.title {
+    width: 100%;
+    font-size: 1.6rem;
+    color: #c4b998;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 56px 0 24px 0;
+}
+
+.dashLineLeft, .dashLineRight {
+    width: 32%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(232, 176, 87, 0.7008053221288515) 35%, rgba(196, 185, 152, 0) 100%);
+}
+
+.dashLineLeft {
+    transform: scale(-1, 1);
+}
+
+.dashLineLeft::before, .dashLineRight::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid #e8b057;
+}
+
+.dashLineLeft::before {
+    transform: translateX(-10px) translateY(-4px) rotate(45deg);
+}
+
+.dashLineRight::before {
+    transform: translateX(-10px) translateY(-4px) rotate(45deg);
+}
+
+.posts {
+    width: 100%;
+    height: 100%;
+    /*display: grid;*/
+    /*grid-template-columns: 50% 50%;*/
+    /*grid-gap: 16px;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 54px;
+    margin-bottom: 64px;
+}
+
+.post {
+    position: relative;
+    width: 390px;
+    height: 320px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.post:hover {
+    border: 1px solid #e8b057;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.post:hover .content {
+    transform: translateY(0);
+}
+
+.post img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    width: 100%;
+    height: 135px;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Trirong', serif;
+    transform: translateY(60px);
+    transition: 0.5s;
+}
+
+.titlePost {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #e8b057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.titlePost font {
+    width: 90%;
+    overflow-wrap: anywhere;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+.infPost {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #e8b057;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.infPost img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e8b057;
+}
+
+.infPost font {
+    position: absolute;
+    color: #f9f9f9;
+    left: 72px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.paging {
+    width: 100%;
+    margin-top: 48px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+    list-style: none;
+}
+
+.itemPage {
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: 'Trirong', serif;
+    box-sizing: border-box;
+}
+
+.itemPage.active {
+    border: 1px solid #e8b057;
+}
+

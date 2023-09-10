@@ -1,0 +1,248 @@
+.backgroundSlider{
+    width: 100%;
+    height: 80%;
+    background-color: #869696;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    filter: brightness(0.5) saturate(40%);
+    z-index: -1;
+}
+.slider {
+    width: 100%;
+    height: 672px;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+
+.slides {
+    width: 100%;
+    position: absolute;
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 80%;
+    position: absolute;
+    transition: 0.8s;
+}
+
+/*left*/
+.slide:nth-child(2) {
+    width: 60%;
+    height: 320px;
+    transform: translateY(64px);
+    filter: brightness(0.5) saturate(0%);
+}
+
+/*mid*/
+.slide:nth-child(3) {
+    width: 70%;
+    height: 480px;
+    transform: translateX(240px);
+    z-index: 1;
+    box-shadow: 0 24px 32px #000000;
+}
+
+/*right*/
+.slide:nth-child(4) {
+    width: 60%;
+    height: 320px;
+    transform: translateX(calc(320px + 60%)) translateY(64px);
+    filter: brightness(0.5) saturate(0%);
+}
+
+.slide:nth-child(1) {
+    width: 60%;
+    height: 320px;
+    transform: translateX(calc((60% + 320px + 42px) * -1)) translateY(64px);
+    filter: brightness(0.5) saturate(0%);
+    /*opacity: 0;*/
+}
+
+.slide:nth-child(n+5) {
+    width: 60%;
+    height: 320px;
+    transform: translateX(calc(320px + 60% + 60% + 320px)) translateY(64px);
+    filter: brightness(0.5) saturate(0%);
+    z-index: -1;
+    /*opacity: 0;*/
+}
+
+.buttons {
+    position: absolute;
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    transform: translateX(224px) translateY(160px);
+}
+
+.buttons i {
+    font-size: 2.4rem;
+    color: #e8b057;
+}
+
+.btnPrev, .btnNext {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #b28e3d;
+    background-color: #232020;
+}
+
+.btnPrev::before, .btnNext::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #232020;
+    border: 2px solid #937341;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btnPrev:hover::before, .btnNext:hover::before {
+    transform: scale(1.1);
+}
+
+.buttons1{
+}
+
+.btnPrev1, .btnNext1{
+    width: 484px;
+    height: 210px;
+    background-color: transparent;
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+    bottom: 114px;
+}
+.btnPrev1{
+    left: 0;
+}
+
+.boxBtnMid {
+    width: 552px;
+    height: 292px;
+    left: 504px;
+    background-color: transparent;
+    position: absolute;
+    clip-path: polygon(0% 10%, 50% 0%, 100% 10%, 100% 88%, 50% 100%, 0% 88%);
+    z-index: 1;
+    bottom: 64px;
+    overflow: hidden;
+}
+
+.btnMid{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btnNext1{
+    right: 0;
+}
+
+.sliderButtons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 212px;
+    z-index: 1;
+}
+
+.polygon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.8s;
+    text-align: center;
+}
+
+.polygon:hover {
+    cursor: pointer;
+}
+
+.polygon:nth-child(2) {
+    filter: brightness(0.4);
+    transform: translateY(-1px);
+}
+
+.polygon:nth-child(3){
+    transform: translateX(504px);
+    z-index: 3;
+}
+
+.polygon:nth-child(4) {
+    filter: brightness(0.4);
+    transform: translateX(1004px);
+    z-index: 1;
+}
+
+.polygon:nth-child(1) {
+    filter: brightness(0.4);
+    transform: translateX(-552px);
+}
+
+.polygon:nth-child(n+5) {
+    filter: brightness(0.4);
+    transform: translateX(calc(1030px + 515px));
+}
+
+.content {
+    position: absolute;
+    line-height: 4.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #c4b998;
+    text-transform: uppercase;
+    font-family: 'Trirong', serif;
+    margin: 24px 0 0 0;
+}
+
+.description {
+    font-size: 4rem;
+    color: #937341;
+    text-transform: uppercase;
+    font-family: 'Trirong', serif;
+}
+
+.note {
+    font-size: 1.4rem;
+    color: #c4b998;
+    font-family: 'Trirong', serif;
+}
+
+.canvas {
+}
+
+.canvas1 {
+    width: 552px;
+    height: 210px;
+    position: relative;
+    transition: 0.8s;
+}
+
+
+
+
+
+
+
