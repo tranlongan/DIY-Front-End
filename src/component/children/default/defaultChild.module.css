@@ -169,6 +169,7 @@
 }
 
 .description font {
+    width: 90%;
     font-size: 1.3rem;
     overflow-wrap: anywhere;
     text-align: center;

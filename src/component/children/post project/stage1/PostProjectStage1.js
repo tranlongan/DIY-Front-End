@@ -82,9 +82,9 @@ export default function PostProjectStage1() {
     const handleNextStage = () => {
         navigate('/postProject/stage2', {
             state: {
-                titlePrj: nameProject,
+                namePrj: nameProject,
                 titlePhoto: inputTitlePhoto_.current.files[0],
-                ckeditor: editorData
+                ckeditorData: editorData
             }
         })
     }

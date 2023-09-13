@@ -2,10 +2,11 @@ import style from './PostProject2.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronRight, faPlus, faXmark} from "@fortawesome/free-solid-svg-icons";
 import {useEffect, useRef, useState} from "react";
-import {useLocation} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 import axios from "axios";
 
 export default function PostProjectStage2() {
+    const navigate = useNavigate()
     const location = useLocation()
     const labelProductPicture_ = useRef(null)
     const inputTitlePhoto_ = useRef(null)
@@ -22,6 +23,9 @@ export default function PostProjectStage2() {
     const [products, setProducts] = useState([])
     const [imgProducts, setImgProducts] = useState([])
     const [nameProducts, setNameProducts] = useState([])
+    const [priceProducts, setPriceProducts] = useState([])
+    const [linkProducts, setLinkProducts] = useState([])
+
     useEffect(() => {
         if (productPicture === undefined) {
             return
@@ -40,7 +44,6 @@ export default function PostProjectStage2() {
             // console.log(item.img)
         })
     }, [products])
-
     function disableScroll() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
@@ -49,19 +52,14 @@ export default function PostProjectStage2() {
             window.scrollTo(scrollLeft, scrollTop);
         };
     }
-
     function enableScroll() {
         window.onscroll = function () {
         };
     }
-
     function closeForm() {
         box_.current.style.display = "none"
         enableScroll()
     }
-
-    const [products1, setProducts1] = useState([])
-
     const confirm = async () => {
         try {
             const obj = {
@@ -75,12 +73,13 @@ export default function PostProjectStage2() {
 
             setImgProducts(imgPrd => [...imgPrd, productPicture])
             setNameProducts(namePrd => [...namePrd, nameProduct])
+            setPriceProducts(valuePricePrd => [...valuePricePrd, pricePrd])
+            setLinkProducts(linkPrd => [...linkPrd, linkProduct])
             closeForm()
         } catch (e) {
             console.log(e)
         }
     }
-
     const handleOpenForm = () => {
         box_.current.style.display = "block"
         setProductPicture(undefined)
@@ -91,19 +90,29 @@ export default function PostProjectStage2() {
         labelProductPicture_.current.textContent = "Chọn ảnh minh họa cho sản phẩm"
         disableScroll()
     }
-
     const handleSubmitProducts = async () => {
         try {
             const formData = new FormData()
+
+            formData.append('idUser', JSON.parse(localStorage.getItem('sessionProfile')).id_account)
+            formData.append('nameProject', location.state.namePrj)
             formData.append('image', location.state.titlePhoto)
-            nameProducts.forEach(nameProduct => {
-                formData.append('nameProduct', nameProduct)
-            })
+            formData.append('ckeditorData', location.state.ckeditorData)
             imgProducts.forEach(file => {
                 formData.append('images', file)
             })
+            nameProducts.forEach(nameProduct => {
+                formData.append('nameProducts', nameProduct)
+            })
+            priceProducts.forEach(priceProduct => {
+                formData.append('priceProducts', priceProduct)
+            })
+            linkProducts.forEach(linkProduct =>{
+                formData.append('linkProducts', linkProduct)
+            })
 
             await axios.post('http://localhost:3001/uploadProducts', formData)
+            await navigate('/')
         } catch (e) {
             console.log(e)
         }
