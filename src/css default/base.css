@@ -19,21 +19,162 @@ html {
     width: 100%;
 }
 
+.container {
+    display: block;
+    width: 1240px;
+    margin: 0 auto;
+}
+
 .wide {
     width: 1200px;
     margin: 0 auto;
 }
 
-button {
-    cursor: pointer;
+.row {
+    width: 100%;
+    display: flex;
 }
 
-.hidden{
+.col {
+    margin: 8px;
+    padding: -8px;
+}
+
+.col-2 {
+    width: calc(((100% / 12) * 2) - 16px);
+}
+
+.col-3 {
+    width: calc(((100% / 12) * 3) - 16px);
+}
+
+.col-4 {
+    width: calc(((100% / 12) * 4) - 16px);
+}
+
+.col-5 {
+    width: calc(((100% / 12) * 5) - 16px);
+}
+
+.col-6 {
+    width: calc(((100% / 12) * 6) - 16px);
+}
+
+.col-7 {
+    width: calc(((100% / 12) * 7) - 16px);
+}
+
+.col-8 {
+    width: calc(((100% / 12) * 8) - 16px);
+}
+
+.col-9 {
+    width: calc(((100% / 12) * 9) - 16px);
+}
+
+.col-10 {
+    width: calc(((100% / 12) * 10) - 16px);
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Trirong', serif;
+}
+
+.hidden {
     display: none;
 }
 
-input{
+input {
     padding: 0;
+    font-family: 'Trirong', serif;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000000000;
+}
+
+.coating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 720px;
+    max-width: 720px;
+    height: 480px;
+    max-height: 480px;
+    background-color: #fcf6f6;
+    margin: 0 auto;
+    z-index: 4;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*overflow-y: auto;*/
+    color: black;
+}
+
+.card-title{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 8px 0;
+}
+
+.closeModal{
+    position: absolute;
+    top: 112px;
+    right: 416px;
+    z-index: 5;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: black;
+}
+
+.card input{
+    width: 100%;
+    margin: 8px 0;
+    height: 32px;
+    text-indent: 16px;
+}
+
+.input-outline{
+    width: 100%;
+    height: 48px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    text-indent: 16px;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    padding-top: 16px;
+    font-family: 'Trirong', serif;
+    margin: 16px 0;
 }
 
 /*tổng thể của toàn bộ Scroll*/
@@ -57,3 +198,28 @@ input{
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
 }
+
+.ck-content .image img {
+    width: 48vh;
+    height: 32vh;
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+    .wide{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .wide{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+}
+

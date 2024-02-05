@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 100vw;
     height: 72px;
     color: #f9f9f9;
     z-index: 1000000000;
@@ -16,7 +16,7 @@
 }
 
 .search {
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
     display: flex;
     justify-content: right;
@@ -27,26 +27,27 @@
 .boxSearch {
     /*width: 72%;*/
     width: 44px;
+    height: 44px;
     box-sizing: border-box;
     position: relative;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     transition: 1s;
+    border-radius: 25px;
+    background: rgba(128, 128, 128, 0.2);
 }
 
 .inputSearch {
-    width: 100%;
+    width: 80%;
     height: 44px;
-    border-radius: 25px;
     box-sizing: border-box;
-    background: rgba(128, 128, 128, 0.2);
     border: none;
     outline: none;
     font-size: 1.4rem;
     color: #f9f9f9;
-    text-indent: 40px;
     font-family: 'Trirong', serif;
     transition: 1s;
+    background: rgba(128, 128, 128, 0);
 }
 
 .iconSearch, .iconCloseSearch {
@@ -91,7 +92,7 @@
 }
 
 .listItems {
-    width: 100%;
+    width: 72%;
     justify-content: space-around;
 }
 
@@ -137,6 +138,16 @@
     font-size: 1.4rem;
     margin: 0 4px;
     transition: 0.5s;
+}
+
+.iconNotification {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.iconNotification i {
+    transform: rotate(45deg);
 }
 
 .formExplorePrj, .optionForUser {
@@ -196,7 +207,7 @@
 }
 
 .item button, .profile {
-    width: 120px;
+    width: 168px;
     min-height: 40px;
     font-family: 'Trirong', serif;
     background: rgba(128, 128, 128, 0.2);
@@ -210,6 +221,12 @@
     cursor: pointer;
     padding: 0 8px;
     box-sizing: border-box;
+}
+
+.profile font {
+    overflow-wrap: anywhere;
+    align-items: center;
+    font-size: 1.4rem;
 }
 
 .profile i {
@@ -325,7 +342,7 @@
 
 .inFoUser font {
     width: max-content;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 0 16px;
     overflow-wrap: anywhere;
     font-weight: bolder;
@@ -346,5 +363,144 @@
 
 .listOption li:hover {
     background-color: #4c4c4c;
+}
+
+.notification {
+    position: absolute;
+    width: 412px;
+    background-color: #4c4c4c;
+    transform: translateX(-100%);
+    /*left: 24px;*/
+    top: 48px;
+    left: 112px;
+    height: 88vh;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    overflow-y: auto;
+}
+
+.iconNotification::before {
+    content: '';
+    width: 300px;
+    position: absolute;
+    height: 40px;
+    background-color: rgba(178, 8, 8, 0);
+    /*top: -36px;*/
+    transform: translateX(-100%);
+    top: 16px;
+    left: 112px;
+    z-index: 0;
+}
+
+.iconNotification:hover .notification {
+    display: block;
+    animation: projects 0.5s ease-in-out forwards;
+}
+
+.titleNotification{
+    font-size: 2.4rem;
+    padding: 16px;
+    font-weight: bolder;
+}
+
+.mountNtf {
+    width: 21px;
+    height: 21px;
+    background-color: #d13639;
+    color: white;
+    position: absolute;
+    top: -8px;
+    left: 4px;
+    border-radius: 32px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: anywhere;
+    font-weight: bolder;
+}
+
+.itemNtf {
+    list-style: none;
+    margin-top: 8px;
+    /*overflow-y: auto;*/
+    /*width: 100%;*/
+    /*max-height: 86%;*/
+}
+
+.itemNtf li {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    max-height: 142px;
+    width: 100%;
+}
+
+.itemNtf li:hover {
+    background-color: #494646;
+
+}
+
+.boxAvatar {
+    /*position: relative;*/
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+.avatarNtf {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.iconNtf {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+}
+
+.contentNtf {
+    overflow-wrap: anywhere;
+    width: 70%;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+
+.titlePost{
+    max-height: 46px;
+    overflow-y: hidden;
+}
+
+.notSeen{
+    display: flex;
+    align-items: center;
+}
+
+.notSeen div{
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    background-color: mediumspringgreen;
+    border-radius: 100%;
+}
+
+@media (max-width: 500px) {
+    .listItems {
+        display: none;
+    }
 }
 

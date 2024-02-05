@@ -1,0 +1,269 @@
+.detailPostChild {
+    padding-top: 4px;
+    font-family: 'Trirong', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxBack {
+    width: 100%;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.boxHead {
+    width: 100%;
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 720px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.info {
+    width: 40%;
+    height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.illustration {
+    width: 60%;
+    background-color: #3b3a3a;
+    box-sizing: border-box;
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoUser {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.infoUser img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    object-position: 60% 40%;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+}
+
+.infoUser div {
+    /*font-size: 1.6rem;*/
+}
+
+.titlePost {
+    margin: 16px 0;
+    font-size: 1.6rem;
+}
+
+.boxContent {
+    width: 100%;
+    min-height: 344px;
+    background-color: white;
+    margin-top: 16px;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.boxEditor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boxEditor p, .boxEditor ul {
+    width: 100%;
+}
+
+.boxEditor p img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.boxEditor img {
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boxProducts {
+    width: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 32px;
+    margin-top: 32px;
+}
+
+.listProducts {
+    list-style: none;
+    margin-top: 32px;
+}
+
+.listProducts li {
+    margin: 8px 0;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.boxProduct {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.boxImg {
+    width: 120px;
+    height: 75px;
+}
+
+.boxImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+}
+
+.nameProduct {
+    width: 95%;
+    margin-left: 16px;
+    font-size: 1.4rem;
+    overflow-wrap: anywhere;
+}
+
+.boxProduct button {
+    width: 80px;
+}
+
+.boxComments {
+    width: 100%;
+}
+
+.comments {
+    width: 100%;
+}
+
+.comment {
+    width: 100%;
+    min-height: 110px;
+    background-color: #d3d1d1;
+    padding: 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.boxInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+}
+
+.nameUser {
+    font-size: 1.6rem;
+}
+
+.dateCmt {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 4px;
+}
+
+.contentCmt{
+    margin-top: 16px;
+}
+
+.contentCmt{
+    padding: 0 16px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    overflow-wrap: anywhere;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentCmt p, .contentCmt ul {
+    width: 100%;
+}
+
+.contentCmt img {
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+}
+
+.contentComment figure {
+    width: 96px;
+    height: 96px;
+    box-sizing: border-box;
+    margin: 4px;
+}
+
+.boxReplies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.replies{
+    width: 90%;
+    background-color: #ded1d1;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.datePost{
+    font-size: 1.2rem;
+}
+.fullName{
+    font-size: 1.6rem;
+}

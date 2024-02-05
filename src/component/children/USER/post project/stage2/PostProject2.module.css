@@ -1,0 +1,285 @@
+.postProject {
+    width: 1220px;
+    margin: 72px auto 0 auto;
+    color: #e8b057;
+    font-family: 'Trirong', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: 100%;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.title i {
+    margin: 0 8px;
+}
+
+.title span {
+    text-transform: none;
+}
+
+.boxProducts {
+    width: 100%;
+}
+
+.btnAddPrd {
+    width: 64px;
+    height: 64px;
+    box-sizing: border-box;
+}
+
+.btnAddPrd i {
+    font-size: 3.2rem;
+    color: #e8b057;
+}
+
+.btnAddPrd button {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid #e8b057;
+}
+
+.listProducts {
+    width: 100%;
+    min-height: 400px;
+    background-color: #3b3a3a;
+    margin: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.product {
+    width: 380px;
+    height: 360px;
+    background: #4c4c4c;
+    margin: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+}
+
+.name_Product {
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    width: 100%;
+    height: 104px;
+    color: #e8b057;
+    font-size: 1.4rem;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.pricePrd {
+    padding: 0 16px;
+    color: #e8b057;
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.listBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.listBtn button:nth-child(1){
+    border: 1px solid #c4b998;
+}
+
+.listBtn button:nth-child(2) {
+    border: 1px solid #e8b057;
+}
+
+.listBtn button {
+    margin: 0 4px;
+    width: 112px;
+    height: 40px;
+    font-family: 'Trirong', serif;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: #e8b057;
+    border-radius: 4px;
+}
+
+.box {
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.coating {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(61, 58, 58, 0.3);
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    margin: 72px auto 0 auto;
+    width: 720px;
+    min-height: 560px;
+    max-height: 560px;
+    background-color: #c4b998;
+    overflow-y: auto;
+    padding: 72px 24px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 0 6px #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlePhoto {
+    position: relative;
+}
+
+.titlePhoto input {
+    height: 100%;
+    font-family: 'Trirong', serif;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.titlePhoto label {
+    display: inline-block;
+    width: fit-content;
+    min-height: 48px;
+    max-height: fit-content;
+    padding: 0 16px;
+    text-align: right;
+    font-size: 1.4rem;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+}
+
+.titlePhoto input {
+    position: absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.titlePhoto input + label {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlePhoto input + label {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.titlePhoto input[type=file] + label:hover {
+    background: #3399ff;
+}
+
+.boxImg {
+    margin: 8px auto;
+    width: 80%;
+}
+
+.boxImg img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nameProduct, .priceOfPrd, .linkProduct {
+    width: 88%;
+    margin: 8px 0;
+}
+
+.nameProduct input, .priceOfPrd input, .linkProduct input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 48px;
+    text-indent: 8px;
+    font-family: 'Trirong', serif;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+
+}
+
+.btn button {
+    width: 200px;
+    height: 76px;
+    margin-top: 24px;
+    font-size: 2.4rem;
+    font-family: 'Trirong', serif;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+/*tổng thể của toàn bộ Scroll*/
+.form::-webkit-scrollbar {
+    width: 4px;
+}
+
+/*màu nền của scrollBar*/
+.form::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+/*phần thanh cuộn*/
+.form::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.form::-webkit-scrollbar-thumb:hover {
+    background: #111;
+}
+
+.iconClose{
+    position: absolute;
+    right: 8px;
+    top: 0;
+    cursor: pointer;
+    font-size: 2.4rem;
+}

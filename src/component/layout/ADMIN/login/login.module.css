@@ -1,0 +1,48 @@
+.adminLogin {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trirong', serif;
+}
+
+.card {
+    width: 640px;
+    height: 450px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 32px 64px;
+}
+
+.titleCard{
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.boxBtnLogin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.boxBtnLogin button{
+    width: 90%;
+    height: 32px;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    border-radius: 16px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.err{
+    color: #d13639;
+    font-size: 1.4rem;
+    display: none;
+}

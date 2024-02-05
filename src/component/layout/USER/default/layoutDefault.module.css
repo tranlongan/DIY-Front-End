@@ -1,0 +1,33 @@
+.grip {
+    height: 100%;
+    margin-top: 64px;
+}
+.children{
+    width: 100%;
+    padding-bottom: 64px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.background{
+    filter: brightness(0.5) saturate(50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d9d9d9;
+    z-index: -2;
+}
+
+
+
+
+
+
+
+
+
+
+

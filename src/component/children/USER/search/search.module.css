@@ -1,0 +1,116 @@
+
+.search {
+    width: 1400px;
+    padding-top: 74px;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Trirong', serif;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 64px 0;
+    font-size: 2.4rem;
+}
+
+.label {
+}
+
+.title span {
+    padding-left: 16px;
+}
+
+.boxCards {
+    margin: 0 auto;
+    width: 81%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.card {
+    position: relative;
+    /*background-color: #d13639;*/
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleCard {
+    position: absolute;
+    color: white;
+    top: -14px;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+.item {
+    position: absolute;
+    background-color: #3b3a3a;
+    width: 300px;
+    height: 280px;
+}
+
+.boxImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.boxImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item:hover .illustration{
+    transform: scale(1.05);
+}
+
+.info {
+    position: absolute;
+    top: 232px;
+    left: 8px;
+    width: 280px;
+    height: 64px;
+    background-color: #101217;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #937341;
+}
+
+.boxInfo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    position: absolute;
+    top: -28px;
+    left: 4px;
+}
+
+.boxInfo div {
+    position: absolute;
+    top: -20px;
+    left: 66px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 42px;
+    overflow-wrap: anywhere;
+    font-size: 1.2rem;
+}

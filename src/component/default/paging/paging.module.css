@@ -1,6 +1,8 @@
 .paging {
+    box-sizing: border-box;
+    margin-top: 56px;
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +41,18 @@
     cursor: pointer;
     color: white;
     margin: 0 16px;
+}
+
+@media (max-width: 500px){
+    .item{
+        width: 24px;
+        height: 24px;
+        font-size: 1.6rem;
+    }
+
+    .paging i {
+        font-size: 2rem;
+    }
 }
 
 

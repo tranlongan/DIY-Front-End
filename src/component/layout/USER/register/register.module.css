@@ -1,0 +1,99 @@
+.register {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Trirong', serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transform: scaleX(-1);
+    filter: brightness(0.9);
+}
+
+.titleRegister {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 24%;
+    left: 8%;
+    font-size: 5.6rem;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+.boxRegister {
+    position: relative;
+    width: 1437px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.boxLogo {
+    width: 100%;
+    height: 88px;
+    box-sizing: border-box;
+}
+
+.box {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Trirong', serif;
+    cursor: pointer;
+}
+
+.nameWeb {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 16px;
+}
+
+.boxPagination {
+    list-style: none;
+    display: flex;
+}
+
+.paginationStage {
+    min-width: 24px;
+    height: 3px;
+    background-color: #f9f9f9;
+    margin: 4px;
+}
+
+
+.active {
+    background-color: #d13639;
+}
+
+.footer {
+    position: fixed;
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    padding: 16px 0;
+    bottom: 4%;
+    left: 2%;
+}
+
+.item {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-right: 16px;
+    font-weight: 600;
+}

@@ -1,0 +1,82 @@
+.defaultAdmin {
+    font-size: 1.6rem;
+    font-family: 'Trirong', serif;
+    width: 100%;
+    box-sizing: border-box;
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+}
+
+.nav {
+    font-size: 2rem;
+    padding: 0 4px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 4px 24px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+.nav ul li i {
+    min-width: 32px;
+}
+
+.nav .list1 li:nth-child(2) {
+    margin-top: 48px;
+}
+
+.nav ul li:hover, .nav.list1 li:hover:not(:nth-child(1)) {
+    cursor: pointer;
+    background-color: rgba(218, 219, 220, 0.65);
+}
+
+.boxInfoAdmin {
+    display: flex;
+    align-items: center;
+}
+
+.iconUser {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(215, 211, 211, 0.7);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.iconUser img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(10%);
+}
+
+.infoUser {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    font-size: 1.6rem;
+}
+
+.children {
+    width: 100%;
+    height: calc(100vh - 16px);
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+    background-color: rgba(225, 219, 219, 0.8);
+    box-sizing: border-box;
+    padding: 0 32px 8px 32px;
+}
+
+.active {
+    background-color: lightskyblue;
+}

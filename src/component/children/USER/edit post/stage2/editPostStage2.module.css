@@ -1,0 +1,125 @@
+.editPost{
+    padding-top: 88px;
+    font-family: 'Trirong', serif;
+    color: white;
+}
+
+.boxList{
+    display: flex;
+    font-size: 2rem;
+}
+
+.boxList div{
+    margin: 8px;
+    cursor: pointer;
+}
+
+.boxList div:nth-child(2){
+    cursor: auto;
+}
+
+.active{
+    color: #d13639;
+}
+
+.boxProducts{
+    background-color: #111318;
+    width: 100%;
+    min-height: 400px;
+}
+
+.listProducts {
+    width: 100%;
+    min-height: 400px;
+    /*background-color: #3b3a3a;*/
+    margin: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.product {
+    width: 286px;
+    height: 272px;
+    background: #4c4c4c;
+    margin: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: 70% 30%;
+    box-sizing: border-box;
+}
+
+.name_Product {
+    display: flex;
+    padding: 4px 16px;
+    width: 100%;
+    height: 96px;
+    color: #e8b057;
+    font-size: 1.4rem;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.pricePrd {
+    padding: 0 16px;
+    color: #e8b057;
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.content{
+    padding: 16px 0;
+}
+
+.content img{
+    width: 304px;
+    height: 172px;
+    object-fit: cover;
+    object-position: 60% 40%;
+}
+
+.illustration{
+    display: flex;
+    align-items: center;
+}
+
+.listBtn{
+    width: 100%;
+}
+
+.listBtn button{
+    float: right;
+    width: 112px;
+    height: 40px;
+}
+
+.btnAddPrd {
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+.btnAddPrd i {
+    font-size: 3.2rem;
+    color: #e8b057;
+}
+
+.btnAddPrd button {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid #e8b057;
+}

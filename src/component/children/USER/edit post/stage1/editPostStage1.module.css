@@ -1,0 +1,79 @@
+.editPost{
+    padding-top: 88px;
+    font-family: 'Trirong', serif;
+    color: white;
+}
+
+.boxIllustration{
+    width: 100%;
+}
+
+.boxIllustration img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: 60% 40%;
+}
+
+.boxList{
+    display: flex;
+    font-size: 2rem;
+}
+
+.boxList div{
+    margin: 8px;
+    cursor: pointer;
+}
+
+.boxList div:nth-child(2){
+    cursor: auto;
+}
+
+.box1{
+    /*position: relative;*/
+}
+
+.box1 input{
+    width: 100%;
+    margin: 8px 0;
+}
+
+.title{
+    font-size: 1.6rem;
+    margin: 8px 0;
+}
+
+.form{
+    /*position: fixed;*/
+}
+
+.editor{
+    color: #3b3a3a;
+}
+
+.boxBtn{
+    position: fixed;
+    bottom: 24px;
+    right: 16px;
+}
+
+.boxBtn button{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    font-family: 'Trirong', serif;
+}
+
+.boxBtn button i{
+    font-size: 3.2rem;
+}
+
+.inputTitle{
+    height: 32px;
+    text-indent: 8px;
+}
+
+.active{
+    color: #d13639;
+}

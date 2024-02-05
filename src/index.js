@@ -7,6 +7,11 @@ import {BrowserRouter} from "react-router-dom";
 import './css default/base.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const meta = document.createElement('meta');
+meta.setAttribute('name', 'viewport');
+meta.setAttribute('content', 'width=device-width, initial-scale=1');
+document.head.appendChild(meta);
+
 root.render(
     <BrowserRouter>
         <App/>
